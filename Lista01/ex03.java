@@ -65,6 +65,39 @@ public class ex03 {
 			nota2 = (int) (valor / 2);
 			valor -= Math.round(nota2 * 2);
 		}
+		if (valor >= 1) {
+			moeda_1 = (int) (valor / 1);
+			// valor %= 1;
+			valor -= (moeda_1 * 1);
+
+		}
+		if (valor >= 0.50) {
+			moeda_50 = (int) (valor / 0.50);
+			// valor %= 0.50;
+			valor -= (moeda_50 * 0.50);
+		}
+
+		if (valor >= 0.25) {
+			moeda_25 = (int) (valor / 0.25);
+			// valor %= 0.25;
+			valor -= (moeda_25 * 0.25);
+		}
+		if (valor >= 0.10) {
+			moeda_10 = (int) (valor / 0.10);
+			// valor %= 0.10;
+			valor -= (moeda_10 * 0.10);
+		}
+		if (valor >= 0.05) {
+			moeda_5 = (int) (valor / 0.05);
+			// valor %= 0.05;
+			valor -= (moeda_5 * 0.05);
+		}
+		if (valor >= 0.01) {
+			moeda_01 = (int) (valor / 0.01);
+			// valor %= 0.01;
+			valor -= (moeda_01 * 0.01);
+
+		}
 
 		System.out.println("Notas:");
 		System.out.printf("%d notas de 100\n", nota100);
@@ -73,6 +106,12 @@ public class ex03 {
 		System.out.printf("%d notas de 10\n", nota10);
 		System.out.printf("%d notas de 5\n", nota5);
 		System.out.printf("%d notas de 2\n", nota2);
+		System.out.printf("%d moedas de 1\n", moeda_1);
+        System.out.printf("%d moedas de 50\n",  moeda_50);
+		System.out.printf("%d moedas de 25\n", moeda_25);
+		System.out.printf("%d moedas de 10\n", moeda_10);
+        System.out.printf("%d moedas de 5\n", moeda_5);
+        System.out.printf("%d moedas de 1\n", moeda_01);
 	}
 
 }
