@@ -20,15 +20,47 @@ public class ex17 {
         int num4 = Integer.parseInt(ler.nextLine());
         System.out.println("Escreva o quinto valor inteiro:");
         int num5 = Integer.parseInt(ler.nextLine());
+        // int maior, menor;
 
         if (num1 > num2 && num1 > num3 && num1 > num4 && num1 > num5) {
-            int temp = num1;
-            System.out.println(num1);
+            System.out.println("O maior e: " + num1);
         }
         if(num2 > num1 && num2 > num3 && num2 > num4 && num2 > num5){
-            int temp = num2;
-            System.out.println(num2);
+            System.out.println("O maior e: " + num2);
         }
+        if(num3 > num1 && num3 > num2 && num3 > num4 && num3 > num5){
+            System.out.println("O maior e: " + num3);
+        }
+        if(num4 > num1 && num4 > num2 && num4 > num3 && num4 > num5){
+            System.out.println("O maior e: " + num4);
+        }
+        if(num5 > num1 && num5 > num1 && num5 > num3 && num5 > num4){
+            System.out.println("O maior e: " + num5);
+        }
+                                /////MENORES/////
+
+        if (num1 < num2 && num1 < num3 && num1 < num4 && num1 < num5) {
+            System.out.println("O menor e: " + num1);
+        }
+        if (num2 < num1 && num2 < num3 && num2 < num4 && num2 < num5) {
+            System.out.println("O menor e: " + num2);
+        }
+        if (num3 < num1 && num3 < num2 && num3 < num4 && num3 < num5) {
+            System.out.println("O menor e: " + num3);
+        }
+        if (num4 < num1 && num4 < num2 && num4 < num3 && num1 < num5) {
+            System.out.println("O menor e: " + num4);
+        }
+        if (num5 < num1 && num5 < num2 && num5 < num3 && num5 < num4) {
+            System.out.println("O menor e: " + num5);
+        }
+
+        // if (num1 > num2) {
+        //     maior = num1;
+        // }
+        // if (num2 > num3) {
+        //     maior = num3;
+        // }
 
     }
     

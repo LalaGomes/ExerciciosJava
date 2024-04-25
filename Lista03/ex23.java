@@ -19,5 +19,4 @@ public class ex23 {
             System.out.println("O valor é negativo!");
         }
     }
-    
 }

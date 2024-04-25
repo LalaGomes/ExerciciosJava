@@ -16,7 +16,5 @@ public class ex11 {
         double valor = (salario * reajuste) + salario;
 
         System.out.println("O seu novo salario sera: R$ " + valor);
-
     }
-    
 }

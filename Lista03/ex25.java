@@ -27,6 +27,5 @@ public class ex25 {
         if (golsTime1 == golsTime2) {
             System.out.println("EMPATE!");
         }
-
     }
 }

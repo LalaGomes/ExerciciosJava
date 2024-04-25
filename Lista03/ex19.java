@@ -28,8 +28,5 @@ public class ex19 {
         else{
             System.out.println("O doutor tem o salario maior no valor de: R$ " + calcD);
         }
-
-
-
     }
 }

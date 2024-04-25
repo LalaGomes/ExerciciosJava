@@ -14,8 +14,6 @@ public class ex01 {
         int sub = num + 1;
         int adi = num - 1;
 
-        System.out.println("O sucessor do numero: " + num + " e " + adi + " e o antecessor e: " + sub);
-        
+        System.out.println("O sucessor do numero: " + num + " e " + adi + " e o antecessor e: " + sub); 
     }
-    
 }

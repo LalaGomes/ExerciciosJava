@@ -20,7 +20,5 @@ public class ex05 {
         int calculomeses = (meses * 30);
 
         System.out.println("Sua idade em dias é igual a: " + (calculoanos + calculomeses + dias));
-
-
     }
 }

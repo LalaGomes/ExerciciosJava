@@ -26,5 +26,4 @@ public class ex26 {
             System.out.println("Valores iguais");
         }
     }
-    
 }

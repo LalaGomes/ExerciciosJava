@@ -13,6 +13,5 @@ public class ex03 {
         int calc = (temperatura - 32) * 5 / 9;
 
         System.out.println("A temperatura em Celcius é: " + calc);
-
     }
 }

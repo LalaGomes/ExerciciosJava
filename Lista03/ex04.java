@@ -18,7 +18,5 @@ public class ex04 {
         int calc = (n1 * 2 + n2 * 3 + n3 * 5) / 10;
 
         System.out.println("Media final: " + calc);
-
-
     }
 }
