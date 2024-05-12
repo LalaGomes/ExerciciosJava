@@ -1,15 +1,13 @@
-/**
- *Leia 3 valores de ponto flutuante e efetue o cálculo das raízes da equação de Bhaskara.
-Se não for possível calcular as raízes, mostre a mensagem correspondente “Impossivel
-calcular”, caso haja uma divisão por 0 ou raiz de número negaOvo.
-Entrada:
-Leia três valores de ponto flutuante (double) A, B e C.
-Saída:
-Se não houver possibilidade de calcular as raízes, apresente a mensagem "Impossivel
-calcular". Caso contrário, imprima o resultado das raízes, com uma mensagem
-conforme exemplo abaixo. Imprima sempre o final de linha após cada mensagem. 
-
-**/
+/* 1. Leia 3 valores de ponto flutuante e efetue o cÃ¡lculo das raÃ­zes da equaÃ§Ã£o de Bhaskara. 
+Se nÃ£o for possÃ­vel calcular as raÃ­zes, mostre a mensagem correspondente â€œImpossivel 
+calcularâ€, caso haja uma divisÃ£o por 0 ou raiz de nÃºmero negaÆŸvo.
+Entrada: 
+Leia trÃªs valores de ponto flutuante (double) A, B e C. 
+SaÃ­da: 
+Se nÃ£o houver possibilidade de calcular as raÃ­zes, apresente a mensagem "Impossivel 
+calcular". Caso contrÃ¡rio, imprima o resultado das raÃ­zes, com uma mensagem 
+conforme exemplo abaixo. Imprima sempre o final de linha apÃ³s cada mensagem. 
+ */
 import java.lang.Math;
 import java.util.Locale;
 import java.util.Scanner;
