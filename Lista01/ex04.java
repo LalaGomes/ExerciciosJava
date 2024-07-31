@@ -11,17 +11,24 @@ import java.util.Scanner;
 public class ex04 {
     public static void main(String[] args) {
         Scanner ler = new Scanner(System.in);
+
         System.out.println("Escreva um valor inteiro:");
         int x = ler.nextInt();
-        System.out.println("Escreva um valor inteiro:");
+        System.out.println("Escreva outro valor inteiro:");
         int y = ler.nextInt();
-        ler.nextLine();
 
-        if(x % 2 != 0){
-            
+        int soma = 0;
+
+        int menor = Math.min(x, y);
+        int maior = Math.max(x, y);
+
+        for (int i = menor + 1; i < maior; i++) {
+            if (i % 2 != 0) { 
+                soma += i;
+            }
         }
 
-
+        System.out.println("A soma dos números ímpares entre " + x + " e " + y + " é: " + soma);
     }
     
 }

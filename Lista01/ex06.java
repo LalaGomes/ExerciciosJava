@@ -8,6 +8,35 @@ Saída:
 Os valores devem ser mostrados na mesma linha, separados por um espaço em 
 branco. Não deve haver espaço após o úlƟmo valor. */
 
+import java.util.Scanner;
+
 public class ex06 {
-    
+     public static void main(String[] args) {
+        Scanner ler = new Scanner(System.in);
+        
+        System.out.println("Digite um número maior do que 0 e menor do que 46:");
+        int N = ler.nextInt();
+        
+        int[] fibonacci = new int[N];
+        
+        if (N > 0) {
+            fibonacci[0] = 0;
+        }
+        if (N > 1) {
+            fibonacci[1] = 1;
+        }
+        
+        for (int i = 2; i < N; i++) {
+            fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
+        }
+        
+        for (int i = 0; i < N; i++) {
+            if (i == N - 1) {
+                System.out.print(fibonacci[i]);
+            } else {
+                System.out.print(fibonacci[i] + " ");
+            }
+        }
+    }
 }
+

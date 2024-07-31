@@ -8,6 +8,17 @@ Saída: A saída é o mesmo número V na base 16 em uma única linha (não esque
 caractere de fim-de-linha). Use letras maiúsculas, conforme os exemplos. 
  */
 
+import java.util.Scanner;
+
 public class ex09 {
-    
+    public static void main(String[] args) {
+        Scanner ler = new Scanner(System.in);
+        
+        System.out.println("Digite um número inteiro:");
+        int v = ler.nextInt();
+        
+        String hex = Integer.toHexString(v).toUpperCase();
+        
+        System.out.println(hex);
+    }
 }

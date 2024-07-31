@@ -22,6 +22,51 @@ Saída:
 Imprima todas as classificações do triângulo especificado na entrada. 
  */
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class ex05 {
-    
+    public static void main(String[] args) {
+        Scanner ler = new Scanner(System.in);
+
+        double[] lados = new double[3];
+        System.out.println("Digite o valor de A:");
+        lados[0] = ler.nextDouble();
+        System.out.println("Digite o valor de B:");
+        lados[1] = ler.nextDouble();
+        System.out.println("Digite o valor de C:");
+        lados[2] = ler.nextDouble();
+
+        Arrays.sort(lados);
+        for (int i = 0; i < lados.length / 2; i++) {
+            double temp = lados[i];
+            lados[i] = lados[lados.length - 1 - i];
+            lados[lados.length - 1 - i] = temp;
+        }
+
+        double A = lados[0];
+        double B = lados[1];
+        double C = lados[2];
+
+        if (A >= B + C) {
+            System.out.println("NAO FORMA TRIANGULO");
+        } else {
+            if (A * A == B * B + C * C) {
+                System.out.println("TRIANGULO RETANGULO");
+            }
+            if (A * A > B * B + C * C) {
+                System.out.println("TRIANGULO OBTUSANGULO");
+            }
+            if (A * A < B * B + C * C) {
+                System.out.println("TRIANGULO ACUTANGULO");
+            }
+            if (A == B && B == C) {
+                System.out.println("TRIANGULO EQUILATERO");
+            } else if (A == B || B == C || A == C) {
+                System.out.println("TRIANGULO ISOSCELES");
+            }
+        }
+    }
+
 }

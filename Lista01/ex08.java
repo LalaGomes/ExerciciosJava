@@ -8,6 +8,27 @@ Saída: Para cada caso de teste de entrada, imprima a mensagem “X e perfeito�
 “X nao e perfeito”, de acordo com a especificação fornecida. 
  */
 
+import java.util.Scanner;
+
 public class ex08 {
-    
+    public static void main(String[] args) {
+        Scanner ler = new Scanner(System.in);
+        
+        System.out.println("Digite um número inteiro:");
+        int x = ler.nextInt();
+        
+        int somaDivisores = 0;
+        
+        for (int i = 1; i <= x / 2; i++) {
+            if (x % i == 0) { 
+                somaDivisores += i;
+            }
+        }
+        
+        if (somaDivisores == x) {
+            System.out.println(x + " e perfeito");
+        } else {
+            System.out.println(x + " nao e perfeito");
+        }
+    }
 }
